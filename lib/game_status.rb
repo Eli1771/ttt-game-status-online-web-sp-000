@@ -63,6 +63,6 @@ def winner(board)
     token = board[first_spot]
     return token
   else 
-    return false
+    return nil
   end
 end 
