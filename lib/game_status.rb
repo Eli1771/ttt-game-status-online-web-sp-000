@@ -41,3 +41,9 @@ def won?(board)
     return false
   end
 end 
+
+def full?(board)
+  board.all? do |space|
+    space == "X" || space == "O"
+  end
+end 
