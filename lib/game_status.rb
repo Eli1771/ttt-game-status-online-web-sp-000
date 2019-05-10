@@ -17,5 +17,19 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  
+  WIN_COMBINATIONS.each do |win_combination|
+    win_space_1 = win_combination[0]
+    win_space_2 = win_combination[1]
+    win_space_3 = win_combination[2]
+    
+    board_1 = board[win_space_1]
+    board_2 = board[win_space_2]
+    board_3 = board[win_space_3]
+    
+    if board_1 == "X" && board_2 == "X" && board_3 == "X"
+      return win_combination
+    else 
+      false
+    end
+  end 
 end 
