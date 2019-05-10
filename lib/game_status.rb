@@ -26,7 +26,7 @@ def won?(board)
     board_2 = board[win_space_2]
     board_3 = board[win_space_3]
     
-    if board_1 == "X" && board_2 == "X" && board_3 == "X"
+    if board_1 == board_2 && board_2 == board_3
       return win_combination
     else 
       false
