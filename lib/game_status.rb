@@ -33,7 +33,7 @@ def won?(board)
       return win_combination
       break
     else 
-      false
+      return false
     end
   end 
 end 
