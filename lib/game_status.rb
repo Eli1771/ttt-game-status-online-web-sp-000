@@ -57,3 +57,12 @@ def over?(board)
 end 
 
 def winner(board)
+  if won?(board) != false
+    winning_positions = won?(board)
+    first_spot = winning_positions[0]
+    token = board[first_spot]
+    return token
+  else 
+    return false
+  end
+end 
