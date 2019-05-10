@@ -28,11 +28,12 @@ def won?(board)
     
     if board_1 == "X" && board_2 == "X" && board_3 == "X"
       return win_combination
+      break
     elsif board_1 == "O" && board_2 == "O" && board_3 == "O"
       return win_combination
+      break
     else 
-      return false
+      false
     end
-    
   end 
 end 
